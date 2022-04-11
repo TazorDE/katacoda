@@ -24,6 +24,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "*",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
@@ -31,13 +39,5 @@
   },
   "backend": {
     "imageid": "ubuntu:2004"
-  },
-  "assets": {
-    "client": [
-      {
-        "file": "*",
-        "target": "~/"
-      }
-    ]
   }
 }

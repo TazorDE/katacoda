@@ -2,9 +2,9 @@
 
 Diese Neo4j Fallstudie enthält eine bereinigte Kopie des [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows) Datensatzes von Shivam Bansal im Stand vom 11. April 2022.
 
-Schauen wir uns diese doch einmal an:
+Schauen wir uns einmal die ersten drei Zeilen dieser an:
 
-`cat csvs/netflix_titles.csv`{{execute}}
+`sed -n 1,3p csvs/netflix_titles.csv`{{execute}}
 
 Nun können wir das Terminal bereinigen.
 
@@ -12,4 +12,5 @@ Nun können wir das Terminal bereinigen.
 
 # Die Datenbank
 
-Jetzt beginnen wir die Datenbank zu füllen:
+open cypher shell in docker container
+`docker exec -it bin/cypher-shell`{{execute}}

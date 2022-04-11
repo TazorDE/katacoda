@@ -11,7 +11,7 @@ echo "done"
 
 # load dataset from https://www.kaggle.com/datasets/shivamb/netflix-shows
 echo "Downloading dataset from https://www.kaggle.com/datasets/shivamb/netflix-shows"
-wget https://www.kaggle.com/datasets/shivamb/netflix-shows/netflix-shows.zip
-unzip netflix-shows.zip
-rm netflix-shows.zip
+wget https://www.kaggle.com/datasets/shivamb/netflix-shows/download
+unzip archive.zip
+rm archive.zip
 echo "done"

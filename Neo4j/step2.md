@@ -2,9 +2,9 @@
 
 Diese Neo4j Fallstudie enthält eine bereinigte Kopie des [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows) Datensatzes von Shivam Bansal im Stand vom 11. April 2022.
 
-Schauen wir uns einmal die ersten drei Zeilen dieser an:
+Schauen wir uns einmal die erste Zeile dieser an um herauszufinden welche Spalten in diesem Datensatz enthalten sind.
 
-`sed -n 1,3p csvs/netflix_titles.csv`{{execute}}
+`sed -n 1p csvs/netflix_titles.csv`{{execute}}
 
 Nun können wir das Terminal bereinigen.
 
@@ -12,5 +12,11 @@ Nun können wir das Terminal bereinigen.
 
 # Die Datenbank
 
-open cypher shell in docker container
-`docker exec -it bin/cypher-shell`{{execute}}
+Um mit der Datenbank zu interagieren nutzen wir die [Cypher Shell](https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/).
+Diese ist bereits im Docker container vorhanden.
+Wir müssen nur die executable Datei aufrufen und uns mit dem Nutzernamen und Passwort authentifizieren, die wir in der Docker-Konfiguration festgelegt haben.
+
+`docker exec -it neo4j bin/cypher-shell -u neo4j -p securepw`{{execute}}
+
+Im nächsten Schritt werden wir die Datenbank mit den Daten aus der CSV-Datei füllen.
+Gehe dazu auf die nächste Seite.

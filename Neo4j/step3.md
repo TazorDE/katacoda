@@ -1,8 +1,3 @@
-# Heading for Step 3
+# CSV formatierte Daten einlesen
 
-This is some text.
-
-Here's a single line of runnable code:
-
-`printf 'Cello, world!\n\n'`{{execute}}
-
+Nun befinden wir uns in der Cypher Shell.

@@ -31,5 +31,13 @@
   },
   "backend": {
     "imageid": "ubuntu:2004"
+  },
+  "assets": {
+    "client": [
+      {
+        "file": "*",
+        "target": "~/"
+      }
+    ]
   }
 }

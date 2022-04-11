@@ -4,7 +4,7 @@ Diese Neo4j Fallstudie enthält eine bereinigte Kopie des [Netflix Movies and TV
 
 Schauen wir uns einmal die erste Zeile dieser an um herauszufinden welche Spalten in diesem Datensatz enthalten sind.
 
-`sed -n 1p csvs/netflix_titles.csv`{{execute}}
+`sed -n 1p csv/netflix_titles.csv`{{execute}}
 
 Nun können wir das Terminal bereinigen.
 

@@ -18,5 +18,6 @@ Wir müssen nur die executable Datei aufrufen und uns mit dem Nutzernamen und Pa
 
 `docker exec -it neo4j bin/cypher-shell -u neo4j -p securepw`{{execute}}
 
+Wenn die Verbindung abgelehnt wird versuche es einfach noch einmal.
 Im nächsten Schritt werden wir die Datenbank mit den Daten aus der CSV-Datei füllen.
 Gehe dazu auf die nächste Seite.

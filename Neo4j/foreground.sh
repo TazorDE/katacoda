@@ -7,6 +7,11 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce
+echo "Docker installed"
+
+# start Docker
+sudo service docker start
+echo "Docker started"
 
 # set up Neo4j environment in docker
 echo "Setting up Neo4j environment in docker..."

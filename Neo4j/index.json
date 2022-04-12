@@ -39,14 +39,7 @@
     }
   },
   "environment": {
-    "showdashboard": true,
-    "dashboards": [
-      {
-        "name": "Neo4j Dashboard",
-        "port": "7474"
-      }
-    ],
-    "uilayout": "terminal-iframe"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"

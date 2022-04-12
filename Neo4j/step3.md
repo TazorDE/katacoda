@@ -21,14 +21,8 @@ Diese Einträge werden als "Rating"-Nodes in der Datenbank gespeichert.
 `MATCH (m:Media) WHERE m.rating IS NOT NULL WITH DISTINCT m.rating as rating CREATE (:Rating {type: rating});`{{execute}}
 
 ## erstelle distinct director Nodes
-Der gleiche Vorgang wird auch für die Regisseure ausgeführt.
+Dieser Vorgang wird auch für die Regisseure ausgeführt.
 `MATCH (m:Media) WHERE m.director IS NOT NULL WITH DISTINCT m.director as director CREATE (:Director {name: director});`{{execute}}
-
-## alle cast-Einträge als einzigartige Nodes erstellen
-Die Cast-Einträge enthalten mehrere Personen.
-Diese werden getrennt und als einzelne Nodes in der Datenbank gespeichert.
-`MATCH (m:Media) WITH DISTINCT m.cast as cast UNWIND cast as data WITH split(data, ',') as split WITH `{{execute}}
-ish funktioniert nicht ganz: MATCH (m:Media) WITH DISTINCT m.cast as cast UNWIND cast as data WITH split(data, ',') as split WITH [] AS list WITH UNWIND split AS char SET list = list + char RETURN list
 
 ## verbinde Media mit Rating
 Nun werden alle "Media"-Nodes mit den zugehörigen "Rating"-Nodes verbunden.

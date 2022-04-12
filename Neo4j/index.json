@@ -16,6 +16,10 @@
       {
         "title": "Daten laden",
         "text": "step3.md"
+      },
+      {
+        "title": "Daten betrachten",
+        "text": "step4.md"
       }
     ],
     "intro": {
@@ -35,7 +39,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal+browser"
   },
   "backend": {
     "imageid": "ubuntu:2004"

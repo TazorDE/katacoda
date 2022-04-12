@@ -16,7 +16,7 @@ Um mit der Datenbank zu interagieren nutzen wir die [Cypher Shell](https://neo4j
 Diese ist bereits im Docker container vorhanden.
 Wir müssen nur die executable Datei aufrufen und uns mit dem Nutzernamen und Passwort authentifizieren, die wir in der Docker-Konfiguration festgelegt haben.
 
-`docker exec -it neo4j bin/cypher-shell -u neo4j -p securepw`{{execute}}
+`docker exec -it neo4j bin/cypher-shell`{{execute}}
 
 Wenn die Verbindung abgelehnt wird versuche es einfach noch einmal.
 Im nächsten Schritt werden wir die Datenbank mit den Daten aus der CSV-Datei füllen.

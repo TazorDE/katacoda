@@ -19,7 +19,7 @@ In der Mitte des Pfeils wird der Beziehungstyp der Relation angegeben.
 
 Wollen wir nur den Film "Die Wilden Kerle" in der Datenbank finden, so muss nur nach dem Namen gefiltert werden.
 Das `WHERE`-Statement wird dazu verwendet.
-`MATCH (m:Media) WHERE m.name = "Die Wilden Kerle"`{{execute}}
+` MATCH (m:Media) WHERE m.name = "Die Wilden Kerle" RETURN m;`{{execute}}
 
 Dies sind die Grundlagen für alle Anfragen an die Datenbank.
 

@@ -11,17 +11,17 @@ Betrachten wir nun wie viele Medien eines Regisseurs/Regisseurpaars in der Daten
 Hierbei werden für jeden Regisseur die Filme mit Hilfe der Funktion `count()` gezählt und diese werden mit dem `ORDER BY`-Konstrukt sortiert.
 Dabei verwenden wir das Schlüsselwort DESC, um die Anzahl der Filme in absteigender Reihenfolge zu sortieren.
 
-`MATCH (d:Director)-[:DIRECTED]->(m) RETURN d.name, count(*) AS strength ORDER BY strength DESC`{{execute}}
+`MATCH (d:Director)-[:DIRECTED]->(m) RETURN d.name, count(*) AS strength ORDER BY strength DESC;`{{execute}}
 
 Das Ergebnis dieser Abfrage zeigt, dass das Regisseurpaar bestehend aus Raúl Campos und Jan Suter mit 18 Medien am häufigsten in der Datenbank vorkommt.
 
 Jetzt verbinden wir diese beiden Abfragen um den Regisseur zu finden der am häufigsten Medien produziert hat, die mit "R" bewertet wurden.
-`MATCH (m:Media {rating:"R"})<-[:DIRECTED]-(d) RETURN d.name, count(*) AS number ORDER BY number DESC`{{execute}}
+`MATCH (m:Media {rating:"R"})<-[:DIRECTED]-(d) RETURN d.name, count(*) AS number ORDER BY number DESC;`{{execute}}
 
 Dies liefert das Ergebnis, dass Martin Scorsese noch vor Quentin Tarantino liegt.
 Also schauen wir uns alle Filme an, die Martin Scorsese produziert hat und die mit "R" bewertet wurden.
 Dazu modifizieren wir das vorangegangene Statement um eine Filterung nach dem Regisseur.
-`MATCH (m:Media {rating:"R"})<-[:DIRECTED]-(d:Director {name: "Martin Scorsese"}) RETURN m, d`{{execute}}
+`MATCH (m:Media {rating:"R"})<-[:DIRECTED]-(d:Director {name: "Martin Scorsese"}) RETURN m, d;`{{execute}}
 
 Das Ergebnis sieht in Graphdarstellung folgendermaßen aus:
 ![Graph Darstellung der vorangegangenen zu Martin Scorsese](https://github.com/TazorDE/katacoda/blob/main/Neo4j/images/martin-scorsese.png?raw=true)

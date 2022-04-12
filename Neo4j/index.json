@@ -2,7 +2,7 @@
   "title": "Neo4j Fallstudie",
   "description": "Lädt das Kaggle Datenset https://www.kaggle.com/datasets/shivamb/netflix-shows und erstellt eine Graph-Datenbank mit den Informationen. Danach wird eine Einführung in die Graph-Datenbank gegeben.",
   "difficulty": "Beginner",
-  "time": "3 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {

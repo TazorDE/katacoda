@@ -43,7 +43,7 @@
     "dashboards": [
       {
         "name": "Neo4j Dashboard",
-        "url": "https://[[HOST_SUBDOMAIN]]-7474-[[KATACODA_HOST]].environments.katacoda.com"
+        "port": "7474"
       }
     ],
     "uilayout": "terminal-iframe"

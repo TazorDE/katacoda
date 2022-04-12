@@ -10,6 +10,9 @@ Nun können wir das Terminal bereinigen.
 
 `clear`{{execute}}
 
+# Das Graphdatenbankkonzept
+https://neo4j.com/docs/getting-started/current/graphdb-concepts/
+
 # Die Datenbank
 
 Um mit der Datenbank zu interagieren nutzen wir die [Cypher Shell](https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/).

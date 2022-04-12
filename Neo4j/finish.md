@@ -1,20 +1,19 @@
 
-On the finish page, summarize what was just learned:
+Herzlichen Glückwunsch!
+Du kennst nun die Grundlagen von Neo4j und der Abfragesprache Cypher.
 
-- 3-4 bullets
-- of what you just
-- did and learned
+- Aufsetzen der Datenbank
+- Erstellen von Daten
+- Abfragen von Daten
 
-## Table of Contents
+## Nächste Schritte
 
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
+Als nächsten Schritt empfehle ich dir, die bereits in der Datenbank vorhandenen cast-Daten aus den Medien zu extrahieren und in eigene Nodes zu speichern und diese mit den Medien zu verbinden.
+Schau dir dazu die String- und Listen-Funktionen in der [Cypher-Dokumentation](https://neo4j.com/docs/cypher-manual/current/) an.
 
-- Scenario A
-- Scenario B
-- Scenario C
+## Quellen
 
-## Further Learning
-
-You could link to other learning resources here. What is a good next step for a learner who just completed this scenario?
-
-
+Die verwendeten Quellen sind:
+- https://neo4j.com/
+- https://hub.docker.com/_/neo4j/
+- https://www.kaggle.com/datasets/shivamb/netflix-shows

@@ -18,8 +18,12 @@
         "text": "step3.md"
       },
       {
-        "title": "Daten betrachten",
+        "title": "Cypher Grundlagen",
         "text": "step4.md"
+      },
+      {
+        "title": "Weiterführende Abfragen",
+        "text": "step5.md"
       }
     ],
     "intro": {

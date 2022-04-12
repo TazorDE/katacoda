@@ -8,6 +8,8 @@ Als Graph würde das Ergebnis so aussehen:
 ![Graph Darstellung der vorangegangenen Abfrage](https://github.com/TazorDE/katacoda/blob/main/Neo4j/images/r-graph.png?raw=true)
 
 Betrachten wir nun wie viele Medien eines Regisseurs/Regisseurpaars in der Datenbank sind.
+Hierbei werden für jeden Regisseur die Filme mit Hilfe der Funktion `count()` gezählt und diese werden mit dem `ORDER BY`-Konstrukt sortiert.
+Dabei verwenden wir das Schlüsselwort DESC, um die Anzahl der Filme in absteigender Reihenfolge zu sortieren.
 
 `MATCH (d:Director)-[:DIRECTED]->(m) RETURN d.name, count(*) AS strength ORDER BY strength DESC`{{execute}}
 
@@ -22,4 +24,4 @@ Dazu modifizieren wir das vorangegangene Statement um eine Filterung nach dem Re
 `MATCH (m:Media {rating:"R"})<-[:DIRECTED]-(d:Director {name: "Martin Scorsese"}) RETURN m, d`{{execute}}
 
 Das Ergebnis sieht in Graphdarstellung folgendermaßen aus:
-![Graph Darstellung der vorangegangenen Abfrage](
+![Graph Darstellung der vorangegangenen zu Martin Scorsese](https://github.com/TazorDE/katacoda/blob/main/Neo4j/images/martin-scorsese.png?raw=true)

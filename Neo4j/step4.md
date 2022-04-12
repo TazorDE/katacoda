@@ -20,7 +20,7 @@ Also zeigen wir nun alle Filme an die mit "R" bewertet sind.
 
 Aufgrund der technischen Limitierungen von Katacoda werden die Ergebnisse dieser Abfrage nicht als Graph dargestellt.
 Als Graph würde das Ergebnis so aussehen:
-![Graph Darstellung der vorangegangenen Abfrage](/images/graph%20(2).png)
+![Graph Darstellung der vorangegangenen Abfrage](/Neo4j/images/r-graph.png)
 
 Betrachten wir nun alle Filme in der Datenbank, die FSK 0 zertfiziert sind.
 `MATCH (m:Media) WHERE m.rating = "FSK 0" RETURN m.name, m.rating, m.director, m.release_year, m.duration, m.cast;`{{execute}}

@@ -14,13 +14,13 @@ Ein Index erhöht die Geschwindigkeit der Suche und sollte auf Attribute angewen
 Testen wir nun einmal die Abfragegeschwindigkeit vor dem Index.
 `MATCH (m:Media) WHERE m.release_year=2016 RETURN m;`{{execute}}
 
-Diese erste Abfrage benötigt 242 ms um die Daten zu laden.
+Diese erste Abfrage benötigt ca. 242 ms um die Daten zu laden.
 
 `CREATE INDEX ON :Media(release_year);`{{execute}}
 
 `MATCH (m:Media) WHERE m.release_year=2016 RETURN m;`{{execute}}
 
-Nach erstellen des Indexes wird die Dauer der Abfrage auf 99ms verkürzt.
+Nach erstellen des Indexes wird die Dauer der Abfrage auf stark verkürzt.
 Attribute nach denen oft gefiltert wird sollten entsprechend in einem Index verwaltet werden.
 
 ## Rating Nodes

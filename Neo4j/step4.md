@@ -1,5 +1,5 @@
 # Cypher Basics
-Sollten Begrifflichkeiten nicht klar sein besteht die Möglichkeit, sich mit Hilfe der ![Cypher-Refcard](https://neo4j.com/docs/cypher-refcard/current/) vertraut zu machen.
+Sollten Begrifflichkeiten nicht klar sein besteht die Möglichkeit, sich mit Hilfe der [Cypher-Refcard](https://neo4j.com/docs/cypher-refcard/current/) vertraut zu machen.
 
 Cypher ist eine Abfragesprache für Neo4j.
 Die Sprache ist speziell für Graphdatenbanken geeignet und basiert auf SQL, SPARQL, sowie auf iconografischen Konstrukten.

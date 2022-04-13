@@ -8,7 +8,7 @@ Desweiteren ist es wichtig zu verstehen, in welchem Format die Daten gespeichert
 
 Um dies zu erreichen werden nun die ersten 3 Zeilen der Datei betrachtet:
 
-`sed -n '1,3p' netflix_titles.csv`{{execute}}
+`sed -n '1,3p' csv/netflix_titles.csv`{{execute}}
 
 Auf Basis dieser Ansicht werden die Attribute ausgesucht, die in die Datenbank übernommen werden.
 Da der Datensatz von vorneherein bereinigt ist, kann dieser ohne spezielle Maßnahmen in die Datenbank überführt werden.

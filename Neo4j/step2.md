@@ -18,8 +18,8 @@ Da das Terminal gefüllt ist können die bis jetzt durchgeführten Schritte ausg
 `clear`{{execute}}
 
 # Das Graphdatenbankkonzept
-Graphdatenbanken basieren auf Eigenschaftsgraphen.
-Diese Graphen bestehen aus Nodes (Objekten) und Relationships (Beziehungen).
+Wie Neo4j selbst in ihrer [Einführung zu Graphdatenbanken](https://neo4j.com/docs/getting-started/4.4/graphdb-concepts/#graphdb-concepts) erläutern, basieren diese auf Eigenschaftsgraphen.
+Diese Eigenschaftsgraphen bestehen aus Nodes (Objekten) und Relationships (Beziehungen).
 
 Nodes sind in Neo4j diskrete Objekte, die über Labels (Kennzeichnungen) kategorisiert werden können.
 Relationships beschreiben Verbindungen zwischen Objekten.

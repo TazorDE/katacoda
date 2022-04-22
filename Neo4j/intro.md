@@ -1,4 +1,4 @@
-# Neo4j Fallstudie
+# Neo4j - Aufbau einer Graph Datenbank anhand von Netflix Filmen und Serien.
 
 Anhand des Datensatzes [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows), der zusätzlich noch bereinigt wurde, werden die Grundlagen von Neo4j und der Abfragesprache Cypher gezeigt. 
 
